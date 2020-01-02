@@ -1,17 +1,17 @@
 #coding:gbk
 """
-Í³¼ÆÈËÎï¹ØÏµ
-×÷Õß:ÀîÁ«Çï
+ç»Ÿè®¡äººç‰©å…³ç³»
+ä½œè€…:æè²ç§‹
 """
 
-import codecs
+import codecs#å¯¼å…¥åº“
 import jieba.posseg as pseg
 import jieba
-name={}
+name={}#å‘½åå‡ ä¸ªå­—å…¸å’Œåˆ—è¡¨
 relation={}
 linename=[]
 jieba.load_userdict("1.txt")
-with codecs.open("ÀèÃ÷ÆÆÏşµÄ½ÖµÀ.txt","r","utf8") as f:
+with codecs.open("é»æ˜ç ´æ™“çš„è¡—é“.txt","r","utf8") as f:#è¯»å–æ–‡ä»¶
 	for x in f.readlines():
 		x=pseg.cut(x)
 		linename.append([])
